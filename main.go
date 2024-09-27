@@ -7,5 +7,10 @@ import (
 )
 
 func main() {
-	fmt.Println(maths.Power(3, 2))
+	n, err := maths.ClosestPowerOf2(1536); 
+	if err != nil {
+		fmt.Println(err)
+	} else {
+		fmt.Println(n)
+	}
 }

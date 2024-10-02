@@ -7,10 +7,6 @@ import (
 )
 
 func main() {
-	n, err := maths.ClosestPowerOf2(1536); 
-	if err != nil {
-		fmt.Println(err)
-	} else {
-		fmt.Println(n)
-	}
+	primes := maths.FindXPrimes(10)
+	fmt.Println(primes)
 }
